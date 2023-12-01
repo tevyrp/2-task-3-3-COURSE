@@ -1,0 +1,10 @@
+public class Circle extends Shape {
+    public Circle(int x, int y, int size, String color) {
+        super(x, y, size, color);
+    }
+
+    @Override
+    public void draw(Renderer renderer) {
+        renderer.renderCircle(x, y, size, color);
+    }
+}
