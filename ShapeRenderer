@@ -1,0 +1,13 @@
+public class ShapeRenderer {
+    private Shape shape;
+    private Renderer renderer;
+
+    public ShapeRenderer(Shape shape, Renderer renderer) {
+        this.shape = shape;
+        this.renderer = renderer;
+    }
+
+    public void render() {
+        shape.draw(renderer);
+    }
+}
