@@ -1,0 +1,10 @@
+public class Square extends Shape {
+    public Square(int x, int y, int size, String color) {
+        super(x, y, size, color);
+    }
+
+    @Override
+    public void draw(Renderer renderer) {
+        renderer.renderSquare(x, y, size, color);
+    }
+}
