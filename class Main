@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+      
+        Renderer renderer = new ShapeRenderer();
+
+        Shape shape = new Circle(10, 10, 5, "red");
+
+        ShapeRenderer shapeRenderer = new ShapeRenderer(shape, renderer);
+        shapeRenderer.render();
+    }
+}
